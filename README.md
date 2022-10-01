@@ -16,4 +16,9 @@ How to undo mistakes with Git
   - show deleted/modified file
 - git restore index.html
 
+### 3. Discard chunks / lines in a File
+- git diff index.html
+  - show changes
+- git restore -p index.html
+  - choose which chunks would be Discard [y,n]
 
