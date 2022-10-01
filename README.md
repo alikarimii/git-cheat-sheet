@@ -60,4 +60,12 @@ you think you want to reset, you reset, but notice it was a bad idea
 - git branch newBranchName #hash_number
   - now all commit that have been deleted, restore in newBranchName
 
+### 10. Recovering deleted branches
+- git branch -d branchName
+  - delete branch and notice it's bad idea
+- git reflog
+  - show all history, get hash_number of stable state before bad idea
+- git branch branchName #hash_number
+  - all commit back to branchName
+
 
