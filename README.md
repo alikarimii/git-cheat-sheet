@@ -47,4 +47,10 @@ How to undo mistakes with Git
 - git reset --mixed #hash_number
   - reset commit but keep local changes
 
+### 8. Resetting a file to an old revision
+- git log --follow -p -- index.html
+  - show file history.use follow to show history of file before it was renamed
+- git restore --source #hash_number index.html
+  - reset file to old version base on hash_number
+
 
