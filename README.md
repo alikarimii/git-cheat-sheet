@@ -41,3 +41,10 @@ How to undo mistakes with Git
 - git revert #hash_number 
   - undo the effect of old commit
 
+### 7. Resetting to an old revision
+- git reset --hard #hash_number
+  - reset commit and discard all local changes that those commit have
+- git reset --mixed #hash_number
+  - reset commit but keep local changes
+
+
