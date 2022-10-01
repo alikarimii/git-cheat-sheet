@@ -68,4 +68,11 @@ you think you want to reset, you reset, but notice it was a bad idea
 - git branch branchName #hash_number
   - all commit back to branchName
 
+### 11. Moving a commit to a new branch
+you commiited to master,but notice this last commit must go to new branch
+- git branch newBranchName
+  - set current state of master to newBranchName
+- git checkout master && git reset --hard HEAD~1
+  - go to master branch and hard reset last commit to clean history and discard last commit
+
 
