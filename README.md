@@ -30,3 +30,11 @@ How to undo mistakes with Git
 
 **Warning: All local changes will be gone**
 
+### 5. Fixing the last commit
+- git commit --amend -m "new commit message here"
+  - this is for rewrite commit message
+  - for add new file to this commit, can add (git add file) file to staging area and do command again
+
+**amend rewrite git history, so Never change history for commit that have already been pushed to remote repository**
+
+
