@@ -37,4 +37,7 @@ How to undo mistakes with Git
 
 **amend rewrite git history, so Never change history for commit that have already been pushed to remote repository**
 
+### 6. Reverting a commit in the middle
+- git revert #hash_number 
+  - undo the effect of old commit
 
