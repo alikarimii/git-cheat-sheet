@@ -10,3 +10,10 @@ How to undo mistakes with Git
   - Discarding local change
 
 **Warning: All local changes will be gone**
+
+### 2. Restoring a Deleted File
+- git status
+  - show deleted/modified file
+- git restore index.html
+
+
