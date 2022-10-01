@@ -22,3 +22,11 @@ How to undo mistakes with Git
 - git restore -p index.html
   - choose which chunks would be Discard [y,n]
 
+### 4. Discarding all local changes
+- git status
+  - see all deleted / modified file
+- git restore .
+  - Discard all local change
+
+**Warning: All local changes will be gone**
+
