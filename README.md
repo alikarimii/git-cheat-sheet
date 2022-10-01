@@ -75,4 +75,13 @@ you commiited to master,but notice this last commit must go to new branch
 - git checkout master && git reset --hard HEAD~1
   - go to master branch and hard reset last commit to clean history and discard last commit
 
+### 12. Moving a commit to a different branch
+we have a commit that not belong to master and must go to feature branch
+- git checkout feature
+  - go to considered branch
+- git cherry-pick #hash_number
+  - get commit from pre-branch and add to this branch
+- git checkout master && git reset --hard HEAD~1
+  - go to master and clean it
+
 
