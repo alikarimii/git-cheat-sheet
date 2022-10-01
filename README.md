@@ -53,4 +53,11 @@ How to undo mistakes with Git
 - git restore --source #hash_number index.html
   - reset file to old version base on hash_number
 
+### 9. Recovering deleted commits
+you think you want to reset, you reset, but notice it was a bad idea
+- git reflog
+  - show all history of git, get hash_number of step before bad idea,stable state
+- git branch newBranchName #hash_number
+  - now all commit that have been deleted, restore in newBranchName
+
 
