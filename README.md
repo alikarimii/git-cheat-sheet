@@ -93,4 +93,9 @@ if we want change some later commit,not last one, we can't use --amend.
   - after choose "reword" for considered commit, close editor page
   - another editor page opened and you can edit commit message
 
+### 14. Deleting commits with Interactive Rebase
+- git rebase -i HEAD~2
+  - select 2 last commit in revese order again
+  - just like 13th tip, but instead "reword", use "drop"
+
 
