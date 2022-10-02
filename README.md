@@ -98,4 +98,11 @@ if we want change some later commit,not last one, we can't use --amend.
   - select 2 last commit in revese order again
   - just like 13th tip, but instead "reword", use "drop"
 
+### 15. Squashing multiple commits into one with Interactive Rebase
+combine some commits
+- git rebase -i HEAD~3
+  - select last 3 commit
+  - use "squash" keyword for combine.
+  - each line that you rewrite with keyword "squash", combine with commit **above** it
+
 
