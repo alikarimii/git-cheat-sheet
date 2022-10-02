@@ -132,3 +132,6 @@ combine some commits
   - You can start over again instead with `git rebase --abort` in case something goes wrong.
 
 **Be careful when doing that on branches other people are working on**
+
+## Reference
+1. [How to Undo Mistakes With Git Using the Command Line](https://youtu.be/lX9hsdsAeTk)
