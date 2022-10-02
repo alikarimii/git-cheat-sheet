@@ -84,4 +84,13 @@ we have a commit that not belong to master and must go to feature branch
 - git checkout master && git reset --hard HEAD~1
   - go to master and clean it
 
+### 13. Editing old commit messages with Interactive Rebase
+if we want change some later commit,not last one, we can't use --amend.
+- git rebase -i HEAD~3
+  - select 3 last commit in reverse order,older commit at the top, newer commit at bottom
+  - in opened editor page, you can choose what do you want,"reword" for edit commit message
+  - don't change commit message in place
+  - after choose "reword" for considered commit, close editor page
+  - another editor page opened and you can edit commit message
+
 
