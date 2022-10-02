@@ -105,4 +105,13 @@ combine some commits
   - use "squash" keyword for combine.
   - each line that you rewrite with keyword "squash", combine with commit **above** it
 
+### 16. Adding changes to an old commit with Interactive Rebase
+- git add file
+  - add changes to stagging area
+- git commit --fixup #hash_number
+  - hash number of considered commit
+- git rebase -i --autosquash HEAD~4
+  - use interactive rebase 
+  - git rearange and mark some line with "fixup" keyword,just save and close editor page
+
 
