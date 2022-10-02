@@ -114,4 +114,21 @@ combine some commits
   - use interactive rebase 
   - git rearange and mark some line with "fixup" keyword,just save and close editor page
 
+### 17. Splitting/editing an old commit with Interactive Rebase
+- git log --oneline
+  - show commit hash in one line,copy considered commit hash
+- git rebase -i #hash_number
+  - editor page open and list commit in reverse order(older in top,newer in bottom)
+  - rewrite "pick" keyword with "edit" for considered commit, save and close
+  - rebase procedure has began
+- git reset HEAD~1
+  - reset the current state
+  - Now all the changes done in that commit are unstaged and need to be committed again
+  - This is the step where you create new smaller commits
+- git add file && git commit
+  - Commit the pieces individually in the usual way
+- git rebase --continue
+  - When you are done with your surgery, invoke this
+  - You can start over again instead with `git rebase --abort` in case something goes wrong.
 
+**Be careful when doing that on branches other people are working on**
